@@ -13,13 +13,14 @@ html, body, header{
 html{
     font-family: 'Poppins';
     font-size: 10px;
+    font-weight: 600;
 }
 
 .nav-wrapper{
-   /* position: absolute;*/
+   /*position: absolute;*/
     height: 100px;
     display: flex;
-    padding: 0 100px;
+    /*padding: 0 100px;*/
     width: 100%;
     -ms-align-items:center;
     align-items: center;
@@ -28,9 +29,12 @@ html{
 
 .topnav{
     display:flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
+    /*justify-content:flex-end;
     background-color: rgb(255, 145, 0);
-    width: 75%;
+    width: 97.5%;*/
+    margin:auto;
+    max-width: 1200px;
     -ms-align-items:center;
     align-items: center;
 }
@@ -38,13 +42,15 @@ html{
 .nav-link{
     text-decoration: none;
     color: black;
-    display:inline-block;
-    font-size:1.6rem;
+   /* display:inline-block;*/
+   margin: 15px;
+    font-size:1.5rem;
+    letter-spacing: 0.5px;
 }
 
-.nav-link+.nav-link{
+/*.nav-link+.nav-link{
     margin-left: 3%;
-}
+}*/
 
 .search{
     background-image: url(../img/loupe.png);
@@ -56,6 +62,9 @@ html{
     padding-left: 20px;
     font-size: 1.5rem;
     outline:none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    width: 100%;
 }
 
 .header{
@@ -66,6 +75,11 @@ html{
     background-size: cover;
     background-position: 50% 50%;
     position: relative;
+    display: flex;
+    justify-content: center;
+    -ms-align-items:center;
+    align-items:center;
+    color:white;
     z-index: -1;
 }
 
@@ -86,4 +100,42 @@ html{
 .header > .box{
     z-index: 1;
     text-align: center;
+}
+
+h1{
+    font-size: 5rem;
+    letter-spacing: 1px;
+}
+
+.subtitle{
+    font-size: 1.6rem;
+    padding: 2rem 0;
+    letter-spacing: 0.5px;
+}
+
+.header-btn{
+    border:none;
+    width: 200px;
+    height: 60px;
+    font-size: 1.6rem;
+    display: inline-block;
+    margin-top: 40px;
+    color:white;
+    /*font-weight: 600;*/
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    cursor: pointer;
+}
+
+.header-btn+.header-btn{
+    margin-left: 20px;
+}
+
+.trsprnt{
+    border:2px solid;
+    background-color: transparent;
+}
+
+.green{
+    background-color: #03506F;
 }
