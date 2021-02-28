@@ -17,7 +17,7 @@ html{
 }
 
 .nav-wrapper{
-   /*position: absolute;*/
+    /*position: absolute;*/
     height: 100px;
     display: flex;
     /*padding: 0 100px;*/
@@ -43,9 +43,11 @@ html{
     text-decoration: none;
     color: black;
    /* display:inline-block;*/
-   margin: 15px;
+   /*margin: 10px;*/
+   padding: 10px 15px;
     font-size:1.5rem;
     letter-spacing: 0.5px;
+    transition: 0.4s ease-in;
 }
 
 /*.nav-link+.nav-link{
@@ -65,6 +67,17 @@ html{
     font-weight: 600;
     letter-spacing: 0.5px;
     width: 100%;
+    /*padding-bottom: 3px;*/
+    transition: 0.3s ease-in;
+}
+
+.search:focus{
+    border-bottom: 1px solid;
+}
+
+.search-wraper{
+    width: 15%;
+    margin-left: 5px;
 }
 
 .header{
@@ -125,6 +138,8 @@ h1{
     text-transform: uppercase;
     letter-spacing: 0.75px;
     cursor: pointer;
+    transition:0.3s easi-in;
+    border:2px solid transparent;
 }
 
 .header-btn+.header-btn{
@@ -138,4 +153,21 @@ h1{
 
 .green{
     background-color: #03506F;
+}
+
+@media all and (min-width: 1150px) {
+    .trsprnt:hover
+    {
+        background-color: black;
+        border-color :transparent
+    }
+
+.green:hover{
+    border: 2px solid;
+    background-color:transparent;
+}
+.nav-link:hover{
+    background-color: black;
+    color:white;
+}
 }
